@@ -13,6 +13,9 @@ https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-ca
 - Renamed Columns (Multiple Steps) – Renamed column headers for clarity and consistency.
 - Removed Columns – Dropped unnecessary columns like COSMIC ID, Cell Line, GDSC Tissue Descriptor, and others to keep only relevant data for analysis.
 
+Data Transformation:
+![Image](https://github.com/user-attachments/assets/6380e74a-4e6c-49c2-8687-a22ababc6d9f)
+
 
 ### Retained Attributes:
 The final dataset includes the following columns:
@@ -21,6 +24,9 @@ The final dataset includes the following columns:
 - Drug – Name of the drug 
 - ln(IC50) – Log-transformed IC50 values, representing drug sensitivity.
 - Drug Effectiveness – A metric that likely quantifies how effective the drug is against specific cancer types.
+
+Table View:
+![Image](https://github.com/user-attachments/assets/2462a62a-90ca-4af2-bfcd-96ba557a3769)
 
 
 ### Initial Preview of Dashboard:
