@@ -1,5 +1,7 @@
 # Anti-Cancer Drug Sensitivity Analysis Dashboard
 
+Original Data Source: The raw data is publicly available and can be accessed from the GDSC database (https://www.cancerrxgene.org/)
+
 Dataset from Kaggle: Genomics of Drug Sensitivity in Cancer (GDSC)
 https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc
 
