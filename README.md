@@ -1,9 +1,31 @@
 # Anti-Cancer Drug Sensitivity Analysis Dashboard
 
+
 Original Data Source: The raw data is publicly available and can be accessed from the GDSC database (https://www.cancerrxgene.org/)
 
 Dataset from Kaggle: Genomics of Drug Sensitivity in Cancer (GDSC)
 https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc
+
+
+### Data Preprocessing:
+- Changed Type1 – Converted column data types to appropriate formats (e.g., text, numbers, or decimals).
+- Filtered Rows (Multiple Steps) – Applied several filtering conditions to remove unwanted rows. This might involve removing missing values, outliers, or selecting specific drug responses.
+- Renamed Columns (Multiple Steps) – Renamed column headers for clarity and consistency.
+- Removed Columns – Dropped unnecessary columns like COSMIC ID, Cell Line, GDSC Tissue Descriptor, and others to keep only relevant data for analysis.
+
+
+### Retained Attributes:
+The final dataset includes the following columns:
+- TCGA (Cancer Type) – Represents different cancer types 
+- DRUG_ID – Numeric identifier for the drugs.
+- Drug – Name of the drug 
+- ln(IC50) – Log-transformed IC50 values, representing drug sensitivity.
+- Drug Effectiveness – A metric that likely quantifies how effective the drug is against specific cancer types.
+
+
+### Initial Preview of Dashboard:
+![Image](https://github.com/user-attachments/assets/fefd89c9-82be-44a0-a29f-cb21755782dc)
+
 
 ### 1. Overview Metrics (Top Section)
 The top section of the dashboard provides key summary statistics:
@@ -18,8 +40,6 @@ The top section of the dashboard provides key summary statistics:
 
 Additionally, there are slicers for Cancer Type, Drug, and Target, allowing dynamic filtering of the data. The Reset button helps clear all applied filters.
 
-Initial Preview of Dashboard:
-![Image](https://github.com/user-attachments/assets/fefd89c9-82be-44a0-a29f-cb21755782dc)
 
 ### 2. Sensitivity Analysis Table (Left Panel)
 This section highlights which cancer types are most sensitive to a drug:
@@ -91,7 +111,6 @@ This helps visualize the correlation between drug concentration and therapeutic 
 
 This dashboard provides valuable insights for precision oncology, helping researchers identify effective drug candidates and understand drug-cancer interactions.
 
-# Authors
 
 # Acknowledgements
 - This dataset is originally sourced from the Genomics of Drug Sensitivity in Cancer (GDSC) project, a joint effort between the Wellcome Sanger Institute (UK) and the Massachusetts General Hospital Cancer Center (USA). The GDSC project is one of the largest public resources for information on drug sensitivity in cancer cells and molecular markers of drug response. Original Data Source: The raw data is publicly available and can be accessed from the GDSC database (https://www.cancerrxgene.org/).
